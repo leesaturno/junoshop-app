@@ -1,12 +1,13 @@
 {
-  "cli": {
-    "version": ">= 3.4.1"
-  },
   "build": {
-"preview": {
-"android": {
-"buildType": "apk"
-}
-}
-}
+    "android": {
+      "release": {
+        "workflow": "managed"
+      },
+      "development": {
+        "workflow": "managed",
+        "distribution": "internal"  // Para builds de prueba
+      }
+    }
+  }
 }
